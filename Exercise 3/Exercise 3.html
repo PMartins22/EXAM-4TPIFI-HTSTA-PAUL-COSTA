@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ex.3</title>
+</head>
+<body>
+
+<h1>Exercise 3</h1>
+<h1>a)</h1>
+    <p> the following chemical reaction is an acid-base reaction (also known as a neutralization reaction).
+    In this particular case, a strong acid, sulphuric acid, reacts with a strong base, sodim hydroxide (aka caustic soda or lye), 
+    to produce salt and water:</p>
+<!-- Apply subscript to the number to show the chemical equation below in the proper format.-->
+
+    <h1 id="chemical_reaction">NaOH + H<sub>2</sub>SO<sub>4</sub> &rarr; Na<sub>2</sub>SO<sub>4</sub> + H<sub>2</sub>O</h1>
+
+<hr>
+<h1>b)</h1>
+<!-- Embed the EXAM 4TPIFI HTSTA 26Jun2022.pdf file here in a frame with 500 pixels height and a width as large as the viewport.-->
+<iframe src="../EXAM 4TPIFI HTSTA 26Jun2022.pdf" height="500" width="100%"></iframe>
+<hr>
+<h1>c)</h1>
+<p> an example of ccs code:</p>
+
+&ltstyle&gt <br>
+        body { <br>
+            background: red; <br>
+        } <br>
+        h1 { <br>
+            color: blue; <br>
+            background: yellow; <br>
+        } <br>
+        &lt/style&gt
+
+
+<hr>
+<h1>d)</h1>
+<p> classes:</p>
+
+<div class="luxembourg">
+    <h1>Luxembourg</h1>
+    <p>Luxembourg is a very diverse and multicultural country right in the heart of Europe.</p>
+    <p>On average, every person living in Luxembourg speak at least four languages.</p>
+    <p>Emile Metz is one of the best high schools from Luxembourg.</p>
+</div>
+
+<div class="antarctica">
+    <h1>Antarctica</h1>
+    <p>Antarctica is a very cold continent located at the south pole of our planet.</p>
+    <p>There are many species of pinguins living in Antarctica.</p>
+    <p>Except for scientific expeditions, nobody lives in Antarctica.</p>
+</div>
+
+<hr>
+<h1>e)</h1>
+<p> responsive image:</p>
+
+<!-- Use the HTML element that enable the display of different images for different viewports.
+Set the breakeven point at 400px width -->
+
+<!-- For good practice the meta and style should be in the head-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* For width smaller than 400px: */
+img {
+  content: url('smallflower.jpg'); 
+}
+
+/* For width 400px and larger: */
+@media only screen and (min-width: 400px) {
+  img { 
+     content: url('bigflowers.jpg'); 
+  }
+}
+</style>
+
+<img src="bigflowers.jpg" alt="">
+
+
+<hr>
+<h1>f)</h1>
+<p> id:</p>
+
+<!-- Give an id to the chemical reaction shown at point a) 
+     and edit the next paragraph so that by clicking it, one will be redirected to the chemical reaction -->
+<a href="#chemical_reaction"><p>Click here to go up to the neutralisation reaction</p> </a>
+
+
+<hr>
+<h1>g)</h1>
+<p> internal css:</p>
+
+<style>
+    .luxembourg{
+	background-color: lightyellow;
+	color: darkred;
+    }
+.antarctica{
+	background-color: lightblue;
+	color: darkblue;
+}
+.luxembourg, .antarctica{
+    border-style: solid;
+    border-width: 2px;
+}
+	
+
+</style>
+
+<!-- end of Exercise 3 -->
+</body>
+</html>
